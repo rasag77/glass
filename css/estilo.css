@@ -2,19 +2,89 @@
 
 :root{
 	--cor-branca: #ffffff;
+	--cor-base: #dddddd;
 	--cor-fontes: rgba(0, 0, 0, 1);
 	--cor-vermelha: red;
 }
 
 body{
-	background-color: var(--cor-branca);
+	background-color: var(--cor-base);
 	color: var(--cor-fontes);
+}
+
+
+main#interface{
+	width: 50vw;
+	background-color: var(--cor-branca);
+	margin-top: -27px;
 }
 
 p{
 	text-align: justify;
 	text-indent: 50px;
 }
+
+
+/*Formatação do menu*/
+
+nav{
+	justify-content: space-between;
+}
+
+nav, ul{
+	display:flex;
+	flex-direction: row;
+}
+
+nav.menu h1{
+	display: none;
+}
+
+nav.menu{
+	display: block;
+}
+
+nav.menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top:-10px;
+	left:1100px ;
+
+}
+
+nav.menu  a{
+	text-decoration: none;
+	
+}
+
+nav.menu ul li{
+	display: inline-block;
+	background-color: #dddddd;
+	padding: 10px;
+	margin: 2px;
+	-webkit-transition: background-color 1s;
+	-o-transition: background-color 1s;
+	background-color 1s;
+}
+
+
+nav.menu li:hover{
+	background-color: #606060;
+}
+
+
+nav.menu a{
+	color: #000;
+	text-decoration: none;
+}
+
+
+nav.menu a:hover{
+	color: #fff;
+}
+
+
 
 /*formatação de imagens com legendas*/
  
@@ -25,7 +95,9 @@ picture.foto-legenda img{
 
 }
 
-@media (min-width:600px)and (max-width:1920px) {
+/*Formatando area de transparencia da imagem e configurando 
+para aparecer nas telas acima de 600px*/
+@media (min-width:600px) and (max-width:1920px) {
 
 picture.foto-legenda  hgroup.figcaption{
 	opacity: 0;
@@ -44,6 +116,21 @@ picture.foto-legenda  hgroup.figcaption{
 picture.foto-legenda:hover hgroup.figcaption{
 	opacity: 1;
  }
+
+}
+
+@media (min-width:340px) and (max-width: 599px){
+hgroup.figcaption{
+	color: blue;
+	width: auto;
+	height: auto;
+}
+
+
+main#interface{
+	width: 100vw;
+	font-size: 0.6em;
+}
 
 }
 
