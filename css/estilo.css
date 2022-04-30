@@ -149,6 +149,7 @@ main#interface{
 	background-color: var(--cor-branca);
 	margin: 10px auto 0px auto;
 	padding: 10px;
+	font-size: 0.7em;
 }
 
 picture.foto-legenda source#im{
