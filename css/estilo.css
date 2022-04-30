@@ -147,7 +147,7 @@ hgroup.figcaption{
 main#interface{
 	width: 100vw;
 	background-color: var(--cor-branca);
-	margin: 0px auto 0px auto;
+	margin: 10px auto 0px auto;
 	padding: 10px;
 }
 
