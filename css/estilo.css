@@ -7,6 +7,14 @@
 	--cor-vermelha: red;
 }
 
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
 body{
 	background-color: var(--cor-base);
 	color: var(--cor-fontes);
@@ -16,7 +24,7 @@ body{
 main#interface{
 	width: 50vw;
 	background-color: var(--cor-branca);
-	margin-top: -27px;
+	margin: 0px auto 0px auto;
 }
 
 p{
@@ -130,6 +138,11 @@ hgroup.figcaption{
 main#interface{
 	width: 100vw;
 	font-size: 0.6em;
+}
+
+picture.foto-legenda source#im{
+	margin: auto;
+	background-color: red;
 }
 
 }
