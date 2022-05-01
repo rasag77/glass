@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+@font-face {
+	font-family: 'fonteLogo';
+	src: url("../fonts/bubblegum-sans-regular.otf");
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
 :root{
 	--cor-branca: #ffffff;
 	--cor-base: #dddddd;
@@ -52,14 +60,15 @@ header.cabecalho{
 }
 
 header.cabecalho h1{
-	font-family: Arial, sans-serif;
+	font-family: 'fonteLogo', Arial, sans-serif;
 	font-size: 2.4em;
 	color: #606060;
+	padding-top: 10px;
 }
 
 
 header.cabecalho h2{
-	font-family: Arial, sans-serif;
+	font-family: 'Titillium Web', Arial, sans-serif;
 	font-size: 1.2em;
 	color: #888888;
 }
@@ -89,7 +98,7 @@ nav.menu ul{
 	text-transform: uppercase;
 	position: absolute;
 	top:-10px;
-	left:1100px ;
+	left:720px ;
 
 }
 
@@ -125,6 +134,36 @@ nav.menu a:hover{
 }
 
 
+section.corpo{
+	display: block;
+	width: 50vw;
+	max-width: 530px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding: 10px;
+}
+
+
+aside.lateral{
+	display: block;
+	width: 100vw;
+	max-width: 370px;
+	float: right;
+	padding: 10px;
+}
+
+footer.rodape{
+	clear: both;
+	border-top: 1px solid #606060;
+	
+}
+
+
+footer.rodape > p{
+	text-align: center;
+}
+
+
 
 /*formatação de imagens com legendas*/
  
@@ -142,13 +181,13 @@ para aparecer nas telas acima de 600px*/
 picture.foto-legenda  hgroup.figcaption{
 	opacity: 0;
 	position: absolute;
-	margin-top: -348px;
+	margin-top: -290px;
 	margin-left: 4px;
 	padding: 20px;
 	background-color: rgba(0,0,0, .4);
 	color: #ffffff;
-	width: 598px;
-	height: 340px;
+	width: 500px;
+	height: 282px;
 	box-sizing: border-box;
 	transition: opacity 2s;
 }
